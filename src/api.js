@@ -1,6 +1,7 @@
 import axios from "axios";
 const url = "https://api.unsplash.com/search/photos";
-
+// Env variable secrets aren't pulling in. Question to Codesandbox
+// https://github.com/codesandbox/codesandbox-client/discussions/8781
 const searchImages = async (term) => {
   const response = await axios
     .get(url, {
