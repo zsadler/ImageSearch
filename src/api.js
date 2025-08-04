@@ -5,7 +5,7 @@ const searchImages = async (term) => {
   const response = await axios
     .get(url, {
       headers: {
-        Authorization: "Client-ID " + key,
+        Authorization: `Client-ID ${process.env.API_KEY}`,
       },
       params: {
         query: term,
